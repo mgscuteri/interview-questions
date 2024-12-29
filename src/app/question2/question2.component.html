@@ -1,0 +1,35 @@
+<div>
+  <div
+    *ngIf="{
+      fizzDivisor: fizzDivisor | async,
+      buzzDivisor: buzzDivisor | async,
+      fizzBuzzResult: fizzBuzzResult | async
+    } as view"
+  >
+    <h2>RxJS Reactive FizzBuzz</h2>
+    <p>
+      This is a reactive take on the popular "fizzbuzz" question. Below, you
+      will see three values, one of which is user input, with the other two
+      being random numbers generated at two second intervals. The challenge here
+      is to update the "fizzBuzzResult" observable such that it dynamically
+      reacts and displays the updated fizz buzz result whenever any of the three
+      values change.
+    </p>
+
+    <div class="inputElement">
+      <label for="input"> Input Number: </label>
+      <input
+        type="text"
+        [formControl]="inputNumber"
+        id="input"
+        class="lineWidth"
+      />
+    </div>
+
+    <div>
+      <p>Fizz Divisor: {{ view.fizzDivisor }}</p>
+      <p>Buzz Divisor: {{ view.buzzDivisor }}</p>
+      <p><b>FizzBuzzResult: </b> {{ view.fizzBuzzResult }}</p>
+    </div>
+  </div>
+</div>

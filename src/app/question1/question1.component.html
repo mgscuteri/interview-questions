@@ -1,0 +1,43 @@
+<div>
+  <h2>Word Wrapping</h2>
+  <p>
+    Given the two inputs below, reformat the <i><b>Input Text</b></i> to be word
+    wrapped to a <i><b> Max number of characters per line </b></i> characters.
+    You may use the existing submit button, or you may remove the submit button
+    and reformat the output on change.
+  </p>
+
+  <form class="form">
+    <div class="inputElement">
+      <label for="maxWidth">Max number of characters per line: </label>
+      <input
+        type="number"
+        [formControl]="this.formGroup.controls.maxNumberOfCharactersPerLine"
+        id="maxWidth"
+        class="lineWidth"
+      />
+    </div>
+
+    <div class="inputElement">
+      <label for="textInput"> Input Text: </label>
+      <input
+        type="text"
+        [formControl]="this.formGroup.controls.inputText"
+        id="textInput"
+        class="inputText"
+      />
+    </div>
+    <button
+      role="button"
+      class="submitButton"
+      (click)="onSubmit(this.formGroup)"
+    >
+      Submit
+    </button>
+  </form>
+
+  <h3>Output</h3>
+  <pre>
+   {{ output }}
+  </pre>
+</div>
