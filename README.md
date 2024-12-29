@@ -1,5 +1,21 @@
 # AngularTests
 
+This repository contains interview questions geared at testing knowledge of Angular and RxJS.
+
+To get started either clone this repo to perform this test using your editor of choice,
+
+```
+https://github.com/mgscuteri/interview-questions.git
+```
+
+Or, you may take the test on StackBlitz by navigating to the following URL.
+
+```
+https://stackblitz.com/~/github.com/mgscuteri/interview-questions
+```
+
+## Other info
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
 ## Development server
