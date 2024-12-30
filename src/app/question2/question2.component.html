@@ -15,11 +15,29 @@
       reacts and displays the updated fizz buzz result whenever any of the three
       values change.
     </p>
+    <p>
+      Based on the divisor values and the user input, the fizzbuzz result
+      should:
+    </p>
+    <ul>
+      <li>
+        Display "fizz" if the user input value is evenly divisible by the "Fizz
+        Divisor"
+      </li>
+      <li>
+        Display "buzz" if the user input value is evenly divisible by the "Buzz
+        Divisor"
+      </li>
+      <li>
+        Display "fizzbuzz" if the user input value is evenly divisible by the
+        "Buzz Divisor"
+      </li>
+    </ul>
 
     <div class="inputElement">
       <label for="input"> Input Number: </label>
       <input
-        type="text"
+        type="number"
         [formControl]="inputNumber"
         id="input"
         class="lineWidth"
